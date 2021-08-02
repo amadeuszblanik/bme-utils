@@ -1,8 +1,8 @@
 {
   "name": "bme-utils",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Utilities for Node.JS, JavaScript and TypeScript projects",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "typescript": "^4.3.5"
   },
