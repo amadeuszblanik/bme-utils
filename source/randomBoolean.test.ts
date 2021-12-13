@@ -1,8 +1,8 @@
 import { randomBoolean } from '../index';
 
 describe('randomBoolean', () => {
-  it('result should be true or false', () => {
-    expect(randomBoolean()).toBe(true || false);
+  it('result typeof should be boolean', () => {
+    expect(() => typeof randomBoolean() === 'boolean').toBeTruthy();
   });
 
   it('result with true chance set to 0 should always false', () => {
