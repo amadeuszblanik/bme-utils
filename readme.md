@@ -16,13 +16,25 @@ npm i bme-utils
 yarn add bme-utis
 ```
 
-## Usage
+## Utilities
+
+### Clamp
+Returns trimmed value from the provided range. If the minimum value will be larger than the maximum value function will throw an error.
+
+#### Usage
 
 ```typescript
-import { compareObjects } from 'bme-utils';
+import { clamp } from 'bme-utils';
 
-compareObjects({ foo: 'Bar' }, { foo: 'Bar' }); // #true
+clamp(8, 21, 66); // 21 — min
+clamp(88, 21, 66); // 88 — max
+clamp(37, 21, 66); // 37 — value
 ```
+
+Where:
+* `value` is value to be clamped
+* `min` is minimum allowed value
+* `max` is maximum allowed value
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
