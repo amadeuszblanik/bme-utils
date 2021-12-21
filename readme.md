@@ -36,6 +36,26 @@ Where:
 * `min` is minimum allowed value
 * `max` is maximum allowed value
 
+### Compare objects
+Returns boolean results of comparing two objects. It simply compares JSONed objects. Values can be in any format that can be transformed to JSON string.
+
+#### Usage
+
+```typescript
+import { compareObjects } from 'bme-utils';
+
+const objectA = { manufacturer: 'Mercedes-Benz', model: 'A-Class', engine: 'A45s' };
+const objectB = { manufacturer: 'Mercedes-Benz', model: 'A-Class', engine: 'A200' };
+
+compareObjects(objectA, objectB); // false
+compareObjects(objectA, objectA); // true
+compareObjects(objectA, { manufacturer: 'Mercedes-Benz', model: 'A-Class', engine: 'A45s' }); // true
+```
+
+Where:
+* `objectA` is any value (Preferred: object)
+* `objectB` is any value (Preferred: object)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
