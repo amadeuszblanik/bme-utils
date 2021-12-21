@@ -49,7 +49,7 @@ module.exports = {
                 }
             }
         ],
-        "@typescript-eslint/consistent-type-assertions": "error",
+        "@typescript-eslint/consistent-type-assertions": "warn",
         "@typescript-eslint/consistent-type-definitions": "error",
         "@typescript-eslint/dot-notation": "error",
         "@typescript-eslint/explicit-member-accessibility": [
@@ -234,7 +234,7 @@ module.exports = {
                 "rules": {
                     "import-spacing": true,
                     "whitespace": [
-                        true,
+                        false,
                         "check-branch",
                         "check-decl",
                         "check-operator",
