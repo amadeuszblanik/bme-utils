@@ -75,6 +75,25 @@ Where:
 * `callback` is function
 * `wait` is value in millisecond to wait until execute code (or start elevator) (Default: 450)
 
+### First element
+Returns the first element of an array or null value. Might be useful if you enforce the no magic numbers rule.
+
+#### Usage
+
+```typescript
+import { firstElement } from 'bme-utils';
+
+const list = ['First', 'Second', 'Third'];
+const listB = [];
+
+firstElement(list); // 'First'
+firstElement(list); // null
+```
+
+Where:
+* `callback` is function
+* `wait` is value in millisecond to wait until execute code (or start elevator) (Default: 450)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
