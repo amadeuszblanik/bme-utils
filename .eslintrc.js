@@ -59,17 +59,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/indent": [
-            "error",
-            2,
-            {
-                "SwitchCase": 1,
-                "FunctionDeclaration": {
-                    "parameters": "first"
-                },
-                "FunctionExpression": {
-                    "parameters": "first"
-                }
-            }
+            "off",
         ],
         "@typescript-eslint/member-delimiter-style": [
             "error",
