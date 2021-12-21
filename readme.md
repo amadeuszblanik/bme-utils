@@ -87,12 +87,11 @@ const list = ['First', 'Second', 'Third'];
 const listB = [];
 
 firstElement(list); // 'First'
-firstElement(list); // null
+firstElement(listB); // null
 ```
 
 Where:
-* `callback` is function
-* `wait` is value in millisecond to wait until execute code (or start elevator) (Default: 450)
+* `list` is array of any
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
