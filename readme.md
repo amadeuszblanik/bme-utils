@@ -56,6 +56,25 @@ Where:
 * `objectA` is any value (Preferred: object)
 * `objectB` is any value (Preferred: object)
 
+### Debounce
+**WORK IN PROGRESS, DEFAULT VALUES MIGHT CHANGE IN FUTURE**
+Debounce function allows to "group" calls in time sequences to execute it only once. Imagine that you are in the elevator where doors are closing. When someone from the outside press the button it will open doors and the elevator would not go up until doors are closed.
+
+#### Usage
+
+```typescript
+import { debounce } from 'bme-utils';
+
+const callback = () => console.debug('Hello world');
+const wait = 450;
+
+debounce(callback, wait); // 'Hello world
+```
+
+Where:
+* `callback` is function
+* `wait` is value in millisecond to wait until execute code (or start elevator) (Default: 450)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
