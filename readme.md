@@ -159,6 +159,27 @@ Where:
 * `max` is a maximum value
 * `min` is an optional minimum value. (Default: 0)
 
+### To rgba
+**EXPERIMENTAL**
+Transform RGB or hex value to RGBA value.
+
+#### Usage
+
+```typescript
+import { toRgba } from 'bme-utils';
+
+const colour = '#300032';
+const colourB = 'rgb(48, 0, 50)';
+const opacity = 0.33;
+
+toRgba(colour, opacity); // rgba(48, 0, 50, 0.33)
+toRgba(colourB, opacity); // rgba(48, 0, 50, 0.33)
+```
+
+Where:
+* `colour` is a string value with HEX or RGB colour
+* `opacity` is a number value of demanded opacity 
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
