@@ -125,6 +125,22 @@ isEmpty(valueI); // false
 Where:
 * `value` is array of any, string, number, object, null or undefined
 
+### Random boolean
+Returns a random boolean value. Optionally you can set trueChance.
+
+#### Usage
+
+```typescript
+import { randomBoolean } from 'bme-utils';
+
+const trueChance = 0.66;
+
+randomBoolean(trueChance); // true | false
+```
+
+Where:
+* `trueChance` is an optional number value in the range of 0 to 1. (Default: 0.5)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
