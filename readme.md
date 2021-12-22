@@ -93,6 +93,38 @@ firstElement(listB); // null
 Where:
 * `list` is array of any
 
+### Is empty
+Returns a boolean value. The input value can be an array of any, string, number, object, null or undefined.  For array and object, it checks if there's more than or equal to 1 entry. For string, it checks if there's more than or equal to 1 character. For number, it checks if it's not equal to NaN or 0. For null and undefined it always returns false.
+
+#### Usage
+
+```typescript
+import { isEmpty } from 'bme-utils';
+
+const value = ['First', 'Second', 'Third'];
+const valueB = [];
+const valueC = 0;
+const valueD = 100;
+const valueE = NaN;
+const valueF = 'First';
+const valueG = '';
+const valueH = {};
+const valueI = { manufacturer: 'Mercedes-Benz' };
+
+isEmpty(value); // false
+isEmpty(valueB); // true
+isEmpty(valueC); // true
+isEmpty(valueD); // false
+isEmpty(valueE); // true
+isEmpty(valueF); // false
+isEmpty(valueG); // true
+isEmpty(valueH); // true
+isEmpty(valueI); // false
+```
+
+Where:
+* `value` is array of any, string, number, object, null or undefined
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
