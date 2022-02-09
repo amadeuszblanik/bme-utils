@@ -125,6 +125,28 @@ isEmpty(valueI); // false
 Where:
 * `value` is array of any, string, number, object, null or undefined
 
+### Max index
+Returns a maximum index value. The input value can be an array of any or string. For array it will return last element index and for string it will return last letter index. If input will be empty it will return null.
+
+#### Usage
+
+```typescript
+import { maxIndex } from 'bme-utils';
+
+const elements = ['First', 'Second', 'Third'];
+const elementsB = [];
+const elementsC = 'First';
+const elementsD = '';
+
+maxIndex(elements); // 2
+maxIndex(elementsB); // null
+maxIndex(elementsC); // 4
+maxIndex(elementsD); // null
+```
+
+Where:
+* `elements` is array of any or string.
+
 ### Random boolean
 Returns a random boolean value. Optionally you can set trueChance.
 
@@ -140,6 +162,24 @@ randomBoolean(trueChance); // true | false
 
 Where:
 * `trueChance` is an optional number value in the range of 0 to 1. (Default: 0.5)
+
+### Random element
+Returns a random element of array. The input value can be an array of any. If array will be empty it will return null.
+
+#### Usage
+
+```typescript
+import { randomElement } from 'bme-utils';
+
+const elements = ['First', 'Second', 'Third'];
+const elementsB = [];
+
+maxIndex(elements); // 2
+maxIndex(elementsB); // null
+```
+
+Where:
+* `elements` is array of any or string.
 
 ### Random number
 Returns a random number value from provided range values. The minimum value is set to 0 by default.
