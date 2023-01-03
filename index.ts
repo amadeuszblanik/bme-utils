@@ -1,6 +1,7 @@
 export { default as clamp } from './source/clamp';
 export { default as compareObjects } from './source/compareObjects';
 export { default as debounce } from './source/debounce';
+export { default as detectDevice } from './source/detectDevice';
 export { default as firstElement } from './source/firstElement';
 export { default as isEmpty } from './source/isEmpty';
 export { default as maxIndex } from './source/maxIndex';

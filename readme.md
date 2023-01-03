@@ -75,6 +75,30 @@ Where:
 * `callback` is function
 * `wait` is value in millisecond to wait until execute code (or start elevator) (Default: 450)
 
+### Detect device
+Returns device type. It can be used to detect if the user is using mobile device or desktop.
+
+#### Usage
+
+```typescript
+import { detectDevice } from 'bme-utils';
+
+detectDevice();
+```
+
+#### Response types
+```typescript
+export type DeviceType = 'desktop' | 'mobile' | 'tablet';
+export type Browser = 'Chrome' | 'Firefox' | 'Safari' | 'Edge' | 'IE' | 'unknown';
+export type OS = 'iOS' | 'Android' | 'Windows' | 'macOS' | 'Linux' | 'unknown';
+
+interface Response { 
+  type: DeviceType; 
+  browser: Browser; 
+  os: OS 
+}
+```
+
 ### First element
 Returns the first element of an array or null value. Might be useful if you enforce the no magic numbers rule.
 
