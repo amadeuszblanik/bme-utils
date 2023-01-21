@@ -1,4 +1,4 @@
-import { randomBoolean } from '../index';
+import { randomBoolean } from './index';
 
 describe('randomBoolean', () => {
   it('result typeof should be boolean', () => {
