@@ -4,6 +4,7 @@ export { default as debounce } from './debounce';
 export { default as detectDevice } from './detectDevice';
 export { default as firstElement } from './firstElement';
 export { default as isEmpty } from './isEmpty';
+export { default as lastElement } from './lastElement';
 export { default as maxIndex } from './maxIndex';
 export { default as randomBoolean } from './randomBoolean';
 export { default as randomElement } from './randomElement';

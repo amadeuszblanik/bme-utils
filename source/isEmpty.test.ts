@@ -1,58 +1,58 @@
-import isEmpty from './isEmpty';
+import util from './isEmpty';
 
-describe('isEmpty', () => {
+describe('util', () => {
   test("'Lorem ipsum' should not be empty", () => {
-    expect(isEmpty('Lorem ipsum')).toBeFalsy();
+    expect(util('Lorem ipsum')).toBeFalsy();
   });
 
   test("'' should be empty", () => {
-    expect(isEmpty('')).toBeTruthy();
+    expect(util('')).toBeTruthy();
   });
 
   test('-2137 should not be empty', () => {
     // eslint-disable-next-line no-magic-numbers
-    expect(isEmpty(-2137)).toBeFalsy();
+    expect(util(-2137)).toBeFalsy();
   });
 
   test('2137 should not be empty', () => {
     // eslint-disable-next-line no-magic-numbers
-    expect(isEmpty(2137)).toBeFalsy();
+    expect(util(2137)).toBeFalsy();
   });
 
   test('0 should be empty', () => {
     // eslint-disable-next-line no-magic-numbers
-    expect(isEmpty(0)).toBeTruthy();
+    expect(util(0)).toBeTruthy();
   });
 
   test('NaN should be empty', () => {
-    expect(isEmpty(NaN)).toBeTruthy();
+    expect(util(NaN)).toBeTruthy();
   });
 
   test('[] should be empty', () => {
-    expect(isEmpty([])).toBeTruthy();
+    expect(util([])).toBeTruthy();
   });
 
   test("[''] should not be empty", () => {
-    expect(isEmpty([''])).toBeFalsy();
+    expect(util([''])).toBeFalsy();
   });
 
   test("['Lorem ipsum'] should not be empty", () => {
-    expect(isEmpty(['Lorem ipsum'])).toBeFalsy();
+    expect(util(['Lorem ipsum'])).toBeFalsy();
   });
 
   test('{} should be empty', () => {
-    expect(isEmpty({})).toBeTruthy();
+    expect(util({})).toBeTruthy();
   });
 
   test("{ hello: 'World' } should not be empty", () => {
-    expect(isEmpty({ hello: 'World' })).toBeFalsy();
+    expect(util({ hello: 'World' })).toBeFalsy();
   });
 
   test('null should be empty', () => {
-    expect(isEmpty(null)).toBeTruthy();
+    expect(util(null)).toBeTruthy();
   });
 
   test('undefined should be empty', () => {
-    expect(isEmpty(undefined)).toBeTruthy();
+    expect(util(undefined)).toBeTruthy();
   });
 });

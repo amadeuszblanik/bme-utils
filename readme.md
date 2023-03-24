@@ -114,6 +114,21 @@ firstElement(list); // 'First'
 firstElement(listB); // null
 ```
 
+### Last element
+Returns the last element of an array or null value. Might be useful if you enforce the no magic numbers rule.
+
+#### Usage
+
+```typescript
+import { lastElement } from 'bme-utils';
+
+const list = ['First', 'Second', 'Third'];
+const listB = [];
+
+lastElement(list); // 'Third'
+lastElement(listB); // null
+```
+
 Where:
 * `list` is array of any
 

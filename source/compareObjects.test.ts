@@ -1,6 +1,6 @@
-import compareObjects from './compareObjects';
+import util from './compareObjects';
 
-describe('compareObjects', () => {
+describe('util', () => {
   const objectA = {
     hello: 'World',
     foo: 'Bar',
@@ -21,18 +21,18 @@ describe('compareObjects', () => {
   });
 
   test('objectA and objectB should be different', () => {
-    expect(compareObjects(objectA, objectB)).toBeFalsy();
+    expect(util(objectA, objectB)).toBeFalsy();
   });
 
   test('objectB and objectC should be the same', () => {
-    expect(compareObjects(objectB, objectC)).toBeTruthy();
+    expect(util(objectB, objectC)).toBeTruthy();
   });
 
   test('objectB and objectD should be different', () => {
-    expect(compareObjects(objectB, objectD)).toBeFalsy();
+    expect(util(objectB, objectD)).toBeFalsy();
   });
 
   test('objectC and objectD should be different', () => {
-    expect(compareObjects(objectC, objectD)).toBeFalsy();
+    expect(util(objectC, objectD)).toBeFalsy();
   });
 });
