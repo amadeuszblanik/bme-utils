@@ -11,9 +11,7 @@ const B_INDEX_POSITION = 3;
 const shorthandTransform = (shortHex: string): string => {
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
 
-  const hex = shortHex.replace(shorthandRegex, (m, r, g, b) => `${String(r)}${String(r)}${String(g)}${String(g)}${String(b)}${String(b)}`);
-
-  return hex;
+  return shortHex.replace(shorthandRegex, (m, r, g, b) => `${String(r)}${String(r)}${String(g)}${String(g)}${String(b)}${String(b)}`);
 };
 
 const toRgb = (hex: string): Rgb | null => {
